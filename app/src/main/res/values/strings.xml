@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HelpPetPeru</string>
+    <string name="EditText_email">Email</string>
+    <string name="EditText_password">Password</string>
+    <string name="TextView_register">¿No tienes cuenta? Regístrate!</string>
+    <string name="EditText_name">Nombre</string>
+    <string name="EditText_repeat_password">Confirmar Contraseña</string>
+    <string name="EditText_surname">Apellido</string>
+    <string name="TextView_birthdate">Fecha de Nacimiento</string>
+    <string name="navigation_menu_help">Help</string>
+    <string name="navigation_menu_home">Home</string>
+    <string name="navigation_menu_pet">Pet</string>
+    <string name="navigation_menu_profile">Profile</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_cerrar_sesion">Cerrar sesión</string>
+    <string name="hint_birthdate">dd/mm/aaaa</string>
+    <string name="Pet_Description">Describe a tu mascota</string>
+    <string name="helpTabDescription">Help</string>
+    <string name="adoptmeTabDescription">Adóptame</string>
+
+    <string name="facebook_app_id">951047905412675</string>
+    <string name="fb_login_protocol_scheme">fb951047905412675</string>
+
+</resources>

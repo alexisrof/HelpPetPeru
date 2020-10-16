@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="150dp"
+    app:cardCornerRadius="0dp"
+    android:layout_margin="5dp"
+    android:background="#EAF2F8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/cardLostPetImage"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:adjustViewBounds="true"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_LostPetMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_more_help"
+            android:elevation="250dp"
+            app:layout_constraintTop_toTopOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintIntern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toBottomOf="@+id/cardLostPetImage">
+
+            <TextView
+                android:id="@+id/cardLostPetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="THOR"
+                android:textSize="10pt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cardLostPetLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Última ubicación conocida"
+                android:textSize="5pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardLostPetName" />
+
+            <TextView
+                android:id="@+id/cardLostPetDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="start"
+                android:text="linda y juguetona, le gusta morder todo en la casa y jugar con la manguera de agua. siempre rompe todas las coass que hay en la casa pero no se que ha"
+                android:textAlignment="textStart"
+                android:textSize="5.5pt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardLostPetLocation" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
